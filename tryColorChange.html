@@ -1,0 +1,110 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+      #container {
+        border: 1px, gray;
+        width: 20%;
+        height:20%;
+        padding: 5px 3px 3px 5px;
+        margin: 3px 2px 2px 3px;
+      }
+      .interior {
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        display: inline-block;
+        border: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function modify() {
+        let divs = document.getElementsByClassName("interior");
+        for (let i = 0; i < divs.length; i++) {
+          divs[i].style.backgroundColor = divs[i].id;
+         }
+        let outdoor = document.getElementById("container")
+        outdoor.style.border = "thick solid #0000FF";
+      }
+    </script>
+    <div id="container">
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <br>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <br>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <br> 
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <br>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <br>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <br>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <br> 
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+      <div class="interior" id="white"></div>
+      <div class="interior" id="black"></div>
+    </div>
+    <button style="font-size: larger;" onclick= "modify()">Show me a small chess board</button>
+  </body>
+</html>
